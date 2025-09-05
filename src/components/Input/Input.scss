@@ -1,0 +1,17 @@
+#app-input{
+  background-color: transparent;
+  border: 1px solid lightskyblue;
+  color: lightskyblue;
+  border-radius: 8px;
+  padding: 4px 4px 4px 12px;
+  width: 200px;
+  height: 25px;
+  transition: all 0.4s ease;
+  &:focus{
+    outline: none;
+    border-color: black;
+  }
+  &::placeholder{
+    color: #c4c4c4;
+  }
+}

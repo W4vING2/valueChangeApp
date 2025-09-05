@@ -1,0 +1,17 @@
+#app-select {
+  width: 220px;
+  height: 30px;
+  font-size: 17px;
+  background-color: lightskyblue;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 4px 8px 4px 8px;
+  transition: all 0.4s ease;
+}
+#app-select:focus {
+  border: 1px solid black;
+  outline: none;
+}
+
+/*# sourceMappingURL=Select.css.map */

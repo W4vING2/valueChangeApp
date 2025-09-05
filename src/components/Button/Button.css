@@ -1,0 +1,15 @@
+#app-btn {
+  background-color: transparent;
+  color: lightskyblue;
+  border: 1px solid lightskyblue;
+  border-radius: 8px;
+  width: 50%;
+  height: 25px;
+  transition: all 0.4s ease;
+}
+#app-btn:hover {
+  background-color: lightskyblue;
+  color: white;
+}
+
+/*# sourceMappingURL=Button.css.map */
