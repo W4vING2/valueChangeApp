@@ -1,5 +1,4 @@
 import './Select.css'
-import Input from "../Input/Input.jsx";
 
 export default function Select(props){
   return (
@@ -14,6 +13,8 @@ export default function Select(props){
         {props.isDisabled && <option value="USD">USD</option>}
         <option value="RUB">RUB</option>
         <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="GBP">GBP</option>
       </select>
     </>
   )

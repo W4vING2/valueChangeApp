@@ -17,11 +17,12 @@ export default function App() {
     fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_AkMTiZ15UbDpzo16u2b8g975XKGaMh62DKwmqmAE')
       .then(response => response.json())
       .then(json => {
+        console.log(json)
         const countyValue = json.data[currency]?.value;
 
         if (countyValue) {
           const converted = countyValue * inputUSD;
-          setValue(converted);
+          setValue(Math.ceil(converted));
         }
         })
       }
@@ -31,7 +32,10 @@ export default function App() {
       <h1>Change Value App</h1>
       <Select isDisabled/>
       <Input value={inputUSD} onChange={inputChange}/>
-      <Select value={currency} onChange={(e) => setCurrency(e.target.value)}/>
+      <Select value={currency} onChange={(e) => {
+        setCurrency(e.target.value)
+        setValue(0)
+      }}/>
       <Input value={value} isDisabled/>
       <Button onClick={onBtnClick}/>
     </>
